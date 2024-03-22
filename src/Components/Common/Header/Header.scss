@@ -1,4 +1,5 @@
 @import '../../../Sass/Variable.scss';
+@import '../../../Sass/Main.scss';
 .header {
     height:60px;
     width:100%;
@@ -6,32 +7,26 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    color: #336FE3;
-
+    color: $blue;
   }
 
   
   .header__logo {
     width: 32.64px;
     height: 23.14px;
-    top: 18px;
-    left: 9px;
     gap: 0px;
     opacity: 0px;
     padding-left:8px;
-    padding-top: 18px;
-    padding-right: 18.6px;
+   
   }
-
+  .header__left{
+    display: flex;
+    align-items: center;
+  }
   .header__text {
-    width: 207px;
-    height: 26px;
-    top: 17px;
-    left: 57px;
     gap: 0px;
     opacity: 0px;
     font-family: $lato;
-    font-family: Lato;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.4px;
@@ -39,16 +34,24 @@
     padding-left: 15.36px;
     padding-top:17px;
     padding-bottom:17px;
-
+    @include layout(1023){
+      font-size: 18px;
+    }
+    @include layout(1023){
+      font-size: 16px;
+    }
   }
   
   .header__right {
-    width: 912px;
+    width: 71.25%;
     height: 60px;
     left: 368px;
     gap: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     opacity: 0px;
-    background-color: #336FE3;
+    background-color: $blue;
     border:50%;
     border-top-left-radius: 72px;
     border-bottom-right-radius:72px;

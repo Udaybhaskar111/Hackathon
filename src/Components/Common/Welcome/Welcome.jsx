@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Welcome/Welcome.scss';
+import './Welcome.scss';
 import circle from '../../assests/fonts/play-circle.svg';
 /**
  * Desc: Welcome component with a welcome text and watch Markeptplace Demo button
@@ -19,8 +19,8 @@ const Welcome = () => {
       </div>
       
       <div className='welcome__demo'>
-        <img  className='welcome__demo-img' src={circle} alt="play-circle"/>
-        <span className='welcome__demo-span'>Watch Marketplace Demo</span>
+      <img  className='welcome__demo-img' src={circle} alt="play-circle"/>
+      <span className='welcome__demo-span'>Watch Marketplace Demo</span>
       </div>
 
     </div>
