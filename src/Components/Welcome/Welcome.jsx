@@ -1,7 +1,10 @@
 import React from 'react';
 import '../Welcome/Welcome.scss';
 import circle from '../../assests/fonts/play-circle.svg';
-
+/**
+ * Desc: Welcome component with a welcome text and watch Markeptplace Demo button
+ * Author:charan
+ */
 const Welcome = () => {
   return (
     <div className="welcome">
