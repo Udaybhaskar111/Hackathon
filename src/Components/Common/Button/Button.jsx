@@ -2,10 +2,10 @@
 import React from 'react';
 import Buton from '@mui/material/Button';
 export const Button=(props)=>{
-    const {label,type}=props;
+    const {label,type,handle}=props;
   return (
     <div>
-        <Buton type={type}>{label}</Buton>
+        <Buton type={type} onClick={handle}>{label}</Buton>
     </div>
   )
 }
