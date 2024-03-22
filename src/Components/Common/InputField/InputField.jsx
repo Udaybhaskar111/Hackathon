@@ -1,9 +1,13 @@
 import React from 'react';
+import TextField from '@mui/material/TextField';
+import styles from './Input.module.scss';
 export const Input=(props)=>{
-    const {type,register}=props;
+    // eslint-disable-next-line react/prop-types
+    const {register,label,errors}=props;
   return (
     <div>
-      <input type={text} {...register}/>
+      <TextField label={label} {...register}/>
+      <p className={styles.errorText}>{errors}</p>
     </div>
   )
 }

@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import Bu from '@mui/material/Button';
+import Buton from '@mui/material/Button';
 export const Button=(props)=>{
-    const {variant,fu}=props;
+    const {label,type}=props;
   return (
     <div>
-        <Bu variant={variant} onClick={fu}>Outlined</Bu>
+        <Buton type={type}>{label}</Buton>
     </div>
   )
 }
