@@ -1,35 +1,35 @@
 @mixin layout($num) {
-    @media (max-width: #{$num}px) {
-        @content;
-    }
+  @media (max-width: #{$num}px) {
+    @content;
+  }
 }
 
 @mixin minLayout($num) {
-    @media (min-width: #{$num}px) {
-        @content;
-    }
+  @media (min-width: #{$num}px) {
+    @content;
+  }
 }
 
 @mixin minMaxWidth($min, $max) {
-    @media (min-width: #{$min}px) and (max-width: #{$max}px) {
-        @content;
-    }
+  @media (min-width: #{$min}px) and (max-width: #{$max}px) {
+    @content;
+  }
 }
 
 @mixin maxHeight($max) {
-    @media (max-height: #{$max}px) {
-        @content;
-    }
+  @media (max-height: #{$max}px) {
+    @content;
+  }
 }
 
 @mixin minHeight($min) {
-    @media (min-height: #{$min}px) {
-        @content;
-    }
+  @media (min-height: #{$min}px) {
+    @content;
+  }
 }
 
 @mixin minMaxHeight($min, $max) {
-    @media (min-height: #{$min}px) and (max-height: #{$max}px) {
-        @content;
-    }
+  @media (min-height: #{$min}px) and (max-height: #{$max}px) {
+    @content;
+  }
 }
