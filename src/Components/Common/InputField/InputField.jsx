@@ -1,6 +1,5 @@
-import React from 'react'
-
-export default function Input(props) {
+import React from 'react';
+export const Input=(props)=>{
     const {type,register}=props;
   return (
     <div>

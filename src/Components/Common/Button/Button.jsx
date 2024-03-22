@@ -1,6 +1,6 @@
 import React from 'react';
 import Bu from '@mui/material/Button';
-export default function Button(props) {
+export const Button=(props)=>{
     const {variant,fu}=props;
   return (
     <div>
