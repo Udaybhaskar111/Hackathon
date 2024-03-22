@@ -1,19 +1,5 @@
-import React from 'react';
+/* eslint-disable no-undef */
 import axios from 'axios';
-export const getAxios = async (url) => {
-    try {
-        const response = await axios.get(url);
-        return response.data;
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        throw error; 
-    }
-}
-export const postAxios=async(url,body)=>{
-    try {
-        const response = await axios.post(url, body);
-        return response.data;
-    } catch (error) {
-        console.error('Error posting data:', error);
-    }
-}
+export const axiosInstance = axios.create({
+  baseURL:"http://192.168.220.119:9004/"
+});
