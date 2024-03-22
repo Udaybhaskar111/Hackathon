@@ -65,7 +65,11 @@ const TabSwitch = () => {
     </div>
    
    </div>
-
+<hr className='hr'/>
+<div className='LiveProducts'>
+<div className='LiveProduct__div'>Live : 86 Products</div>
+<div className='LiveProduct__div'>Cache : 64 Products</div>
+</div>
     </div>
   );
 };
