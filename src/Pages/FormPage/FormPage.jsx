@@ -37,7 +37,7 @@ export default function FormPage() {
                     <Input label="sourceType" register={register("sourceType",{required:"*sourceType is mandatory"})} errors={errors.sourceType?.message}/>
                 </div>
                 <div>
-                    <Select label="please select" fieldname="domain" options={constants.fields} register={register("domain",{required:"*domain is mandatory"})} errors={errors.type?.message}></Select>
+                    <Select label="please select" fieldname="domain" options={constants.fields} register={register("domain",{required:"*domain is mandatory"})} errors={errors.domain?.message}></Select>
                 </div>
                 </div>
                 <div>
