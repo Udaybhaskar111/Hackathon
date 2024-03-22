@@ -11,7 +11,7 @@
   }
 
   
-  .logo {
+  .header__logo {
     width: 32.64px;
     height: 23.14px;
     top: 18px;
@@ -23,7 +23,7 @@
     padding-right: 18.6px;
   }
 
-  .text {
+  .header__text {
     width: 207px;
     height: 26px;
     top: 17px;
@@ -42,7 +42,7 @@
 
   }
   
-  .right {
+  .header__right {
     width: 912px;
     height: 60px;
     left: 368px;
@@ -54,11 +54,11 @@
     border-bottom-right-radius:20%;
 }
   
-  .bar{
+  .header__bar{
     float:right;
   }
 
-  .notification{
+  .icon__notification{
     width: 24px;
     height: 24px;
     padding-top: 19px;
@@ -67,7 +67,7 @@
     padding-right: 20px;
   }
 
-  .question{
+  .icon__question{
     width: 24px;
     height: 24px;
     padding-top: 19px;
@@ -76,7 +76,7 @@
     
   }
 
-  .userroles{
+  .icon__userroles{
     width: 22px;
     height: 22px;
     gap: 0px;

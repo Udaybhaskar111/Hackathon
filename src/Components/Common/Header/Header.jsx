@@ -11,15 +11,15 @@ const Header = () => {
     return (
         <div>
             <div className="header">     
-                <div className="left">
-                    <img src={img} alt="Logo" className="logo" />
-                    <span className="text">Dextrus Data Market</span>
+                <div className="header__left">
+                    <img src={img} alt="Logo" className="header__logo" />
+                    <span className="header__text">Dextrus Data Market</span>
                 </div>
-                <div className="right">
-                    <div className="bar">
-                        <img src={question} alt="Logo" className="question" />
-                        <img src={notification} alt="Logo" className="notification" />
-                        <img src={userroles} alt="Logo" className="userroles" />
+                <div className="header__right">
+                    <div className="header__bar">
+                        <img src={question} alt="Logo" className="icon__question" />
+                        <img src={notification} alt="Logo" className="icon__notification" />
+                        <img src={userroles} alt="Logo" className="icon__userroles" />
                     </div>
                 </div>
             </div>
