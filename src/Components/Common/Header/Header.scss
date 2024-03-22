@@ -85,3 +85,19 @@
     padding-bottom: 19px;
     padding-right: 40px;
   }
+  @media screen and (max-width: 398px) {
+    .header__logo {
+        display: none;
+    }
+
+    .header__text {
+        width: auto;
+        font-size: 18px;
+    }
+
+    .icon__notification,
+    .icon__question,
+    .icon__userroles {
+        padding: 0 4px;
+    }
+}

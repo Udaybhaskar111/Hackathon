@@ -1,18 +1,9 @@
 @font-face {
     font-family: 'LatoRegular';
-    // src: url('../assests/fonts/Lato-Regular.ttf');
-
     src: url('../assests/fonts/LatoRegular.eot') format('embedded-opentype'),
          url('../assests/fonts/LatoRegular.woff2') format('woff2'),
          url('../assests/fonts/LatoRegular.woff') format('woff'),
          url('../assests/fonts/LatoRegular.ttf') format('truetype'),
          url('../assests/fonts/LatoRegular.svg#LatoRegular') format('svg');
-    font-family: 'LatoBlack';
-    src: url('../assests/fonts/LatoBlack.eot');
-    src: url('../assests/fonts/LatoBlack.eot') format('embedded-opentype'),
-         url('../assests/fonts/LatoBlack.woff2') format('woff2'),
-         url('../assests/fonts/LatoBlack.woff') format('woff'),
-         url('../assests/fonts/LatoBlack.ttf') format('truetype'),
-         url('../assests/fonts/LatoBlack.svg#LatoBlack') format('svg');
 }
 
