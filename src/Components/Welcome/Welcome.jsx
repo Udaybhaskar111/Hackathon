@@ -19,8 +19,8 @@ const Welcome = () => {
       </div>
       
       <div className='welcome__demo'>
-      <img  className='welcome__demo-img' src={circle} alt="play-circle"/>
-      <span className='welcome__demo-span'>Watch Marketplace Demo</span>
+        <img  className='welcome__demo-img' src={circle} alt="play-circle"/>
+        <span className='welcome__demo-span'>Watch Marketplace Demo</span>
       </div>
 
     </div>
