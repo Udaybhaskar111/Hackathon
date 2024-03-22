@@ -20,7 +20,7 @@ export const AllCards=()=>{
             <div className="allCards">
                 {
                     cards.map((each,index)=>(
-                        <CardComponent />
+                        <CardComponent data={each}/>
                     ))
                 }
             </div>

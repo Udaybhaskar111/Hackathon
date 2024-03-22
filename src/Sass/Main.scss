@@ -1,3 +1,7 @@
+/*
+    @Author : Lalitha
+*/
+
 @mixin layout($num) {
   @media (max-width: #{$num}px) {
     @content;
