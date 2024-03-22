@@ -4,8 +4,10 @@ import { Input } from '../../Components/Common/InputField/InputField';
 import { Button } from '../../Components/Common/Button/Button';
 import { Select } from '../../Components/Common/SelectField/SelectField';
 import { constants } from '../../Constants/Constant';
+import { useNavigate } from 'react-router';
 import styles from './FormPage.module.scss'
 export default function FormPage() {
+    const navigate=useNavigate();
        const Form=useForm({
         defaultValues:{
             dataProducts:"",
@@ -20,6 +22,8 @@ export default function FormPage() {
     const setData=(data)=>{
         console.log(data,"gott the data")
     }
+    const handleFun=()=>{
+        return navigate('/')};
     return (
         <>
         <div className={styles.container}>
@@ -47,6 +51,9 @@ export default function FormPage() {
                     <Button type="submit" label="Submit"/>
                 </div>
             </form>
+            <div>
+                <Button type="text" label="Cancel" handle={handleFun}/>
+            </div>
         </div>
         </>
     )
