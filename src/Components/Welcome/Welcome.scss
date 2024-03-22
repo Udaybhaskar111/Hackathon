@@ -4,7 +4,7 @@
 //   width: 759px;
   height: 55px;
   top: 90px;
-  left: 71px;
+  margin-left: 71px;
   gap: 0px;
   opacity: 0px;
 display: flex;
@@ -54,7 +54,7 @@ display: flex;
     display: flex;
     margin-top: 40px;
     left: 1038px;
-    margin-left: 205px;
+    margin-left: 405px;
     padding: 5px 10px 5px 9px;
     gap: 0px;
     border-radius: 4px 0px 0px 0px;
@@ -66,7 +66,7 @@ display: flex;
 &-img{
     width: 24px;
     height: 24px;
-    margin-top: 5px;
+    margin-top: 1px;
     margin-left: 9px;
     padding: 2.91px;
     gap: 0px;
@@ -76,7 +76,7 @@ display: flex;
 &-span{
   width: 161px;
 height: 17px;
-margin-top: 8px;
+margin-top: 5px;
 margin-left: 4px;
 gap: 0px;
 opacity: 0px;
