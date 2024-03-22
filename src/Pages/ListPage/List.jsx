@@ -8,15 +8,36 @@ const columns = [
   { field: 'dataProduct', headerName: 'Data Product', width: 200 },
   { field: 'dataQuality', headerName: 'Data Quality', width: 160 },
   { field: 'domain', headerName: 'Domain', width: 150 },
-  { field: 'dataSensitivity', headerName: 'Data Sensitivity', type: 'number', width: 170 },
+  {
+    field: 'dataSensitivity',
+    headerName: 'Data Sensitivity',
+    type: 'number',
+    width: 170,
+  },
   { field: 'sourceType', headerName: 'Source Type', width: 160 },
   { field: 'Description', headerName: 'Description', width: 380 },
-  { field: 'Bookmark', headerName: '', sortable: false, width: 130, renderCell: (params) => <BookmarkCell /> },
-  { field: 'cart', headerName: '', sortable: false, width: 100, renderCell: (params) => <CartCell /> }, // Add a column for the bookmark icon
+  {
+    field: 'Bookmark',
+    headerName: '',
+    sortable: false,
+    width: 130,
+    renderCell: (params) => <BookmarkCell />,
+  },
+  {
+    field: 'cart',
+    headerName: '',
+    sortable: false,
+    width: 100,
+    renderCell: (params) => <CartCell />,
+  }, // Add a column for the bookmark icon
 ];
 
 const BookmarkCell = () => (
-  <img src={Bookmark} alt="Bookmark" style={{ width: '24px', height: '24px' }} />
+  <img
+    src={Bookmark}
+    alt="Bookmark"
+    style={{ width: '24px', height: '24px' }}
+  />
 );
 
 const CartCell = () => (
@@ -24,24 +45,26 @@ const CartCell = () => (
 );
 
 /**
- * 
- * created list component to view data in list view by rendering dynamically and grid is created by using mui 
+ *
+ * created list component to view data in list view by rendering dynamically and grid is created by using mui
  * @author - Greeshmika
  */
 const List = () => {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
-    axiosInstance.get('/justice-leagues').then(res => {
-      setRows(res.data.data.map(item => ({
-        id: item.id,
-        dataProduct: item.title,
-        dataQuality: item.dataQuality,
-        domain: item.domain,
-        dataSensitivity: item.dataSecurity,
-        sourceType: item.sourceType,
-        Description: item.description,
-      })));
+    axiosInstance.get('/justice-leagues').then((res) => {
+      setRows(
+        res.data.data.map((item) => ({
+          id: item.id,
+          dataProduct: item.title,
+          dataQuality: item.dataQuality,
+          domain: item.domain,
+          dataSensitivity: item.dataSecurity,
+          sourceType: item.sourceType,
+          Description: item.description,
+        })),
+      );
     });
   }, []);
 
