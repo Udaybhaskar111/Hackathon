@@ -3,7 +3,7 @@
 import React from 'react';
 import './Sass/Variable.scss';
 import Home from './Pages/Home/Home';
-import FormPage  from './Pages/FormPage/FormPage';
+import FormPage from './Pages/FormPage/FormPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import JobDetails from './Components/JobDetails/JobDetails';
 import { createContext, useState } from 'react';
@@ -19,7 +19,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/form" element={<FormPage />} />
-              <Route path="/detailpage" element={<JobDetails/>} />
+              <Route path="/detailpage" element={<JobDetails />} />
             </Routes>
           </React.StrictMode>
         </BrowserRouter>

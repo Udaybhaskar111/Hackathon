@@ -1,23 +1,21 @@
 /*@Author Durga Lalitha */
 
-
 @import '../../../Sass/Variable.scss';
 .errorText {
   color: red;
 }
-.select{
+.select {
   width: 400px;
   padding: 15px;
   border-radius: 4px;
   border: 1px solid $borderColor;
   font-size: 15px;
   font-family: $lato;
-
 }
-.option{
+.option {
   font-size: 18px;
 }
-.field{
+.field {
   font-size: 18px;
   font-family: $lato;
   font-weight: 400;

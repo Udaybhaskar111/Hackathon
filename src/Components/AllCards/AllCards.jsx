@@ -5,7 +5,6 @@
 
 */
 
-
 import React from 'react';
 import { CardComponent } from '../Common/CardComponent/CardComponent';
 import './AllCards.scss';
@@ -38,7 +37,7 @@ const AllCards = () => {
   const handleDetail = (id) => {
     axiosInstance.post('/justice-leagues/detail', { id }).then((res) => {
       dat.setDetailCard(res.data);
-      console.log(res.data,"as the dataaaaa")
+      console.log(res.data, 'as the dataaaaa');
       navigate('/detailpage');
     });
   };
@@ -58,8 +57,8 @@ const AllCards = () => {
           count={4}
           // color="primary"
           onChange={(e, p) => setCurrentPage(p)}
-          className='pagination'
-          sx={{ }}
+          className="pagination"
+          sx={{}}
         />
       </Stack>
     </>

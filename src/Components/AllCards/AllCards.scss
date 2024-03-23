@@ -9,18 +9,17 @@
 }
 .dataProducts {
   justify-content: center;
-  margin: 0px 28px 0px 0px;
-  // @include layout(599) {
-  //   margin: 0px 12px 0px 20px;
-  // }
+  margin: 0px auto 0px auto;
+  @include layout(599) {
+    // margin: 0px 1px 0px 20px;
+  }
 }
-.pagination{
-  color: rgba(224,219,213,255);
-  margin-top:'10px';
-  margin-top:'10px';
-  
+.pagination {
+  color: rgba(224, 219, 213, 255);
+  margin-top: '10px';
+  margin-top: '10px';
 }
-.MuiStack-root{
+.MuiStack-root {
   margin-top: 10px;
   align-items: center;
 }

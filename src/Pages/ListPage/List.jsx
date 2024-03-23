@@ -29,7 +29,7 @@ const columns = [
     sortable: false,
     width: 100,
     renderCell: (params) => <CartCell />,
-  }, 
+  },
 ];
 
 const BookmarkCell = () => (

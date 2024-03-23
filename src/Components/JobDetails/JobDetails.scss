@@ -1,122 +1,44 @@
-
 /*Author Sai*/
 
 @import '../../Sass/Variable.scss';
 
-.JobDetails{
-   
-    border: 1px solid;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-   
-    
-    &__Heading{
-        display: flex;
-        margin-left: 26px;
-        color: $orange;
-       font-family: $yantra;
-    
+.JobDetails {
+  border: 1px solid;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 
-        &__h4{
-            margin-top: 33px;
-            
-        }
-        
-        }
-        &__Title{
-            &__Name{
-                font-size: 16px;
-                height: 16px;
-                margin-left: 10px;
-                color: $grey;
-                font-family: $yantra;
-
-                
-            }
-            &__Info{
-                font-size: 16px ;
-                margin-left: 10px;
-                color: $grey;
-                font-family: $yantra;
-            }
-            
-        }
-        &__Experience{
-            &__Title{
-                margin-left: 10px;
-                font-size: 16px ;
-                color: $grey;
-                font-family: $yantra;
-            }
-            &__years{
-                margin-left: 10px;
-                font-size: 16px ;
-                color: $grey;
-                font-family: $yantra;
-            }
-        }
-        &__Location{
-            &__Place{
-                margin-left: 10px;
-                font-size: 16px ;
-                color: $grey;
-                font-family: $yantra;
-            }
-            &__City{
-                margin-left: 10px;
-                font-size: 16px ;
-                color: $grey;
-                font-family: $yantra;
-            }
-        }
-        &__Job{
-            &__Summary{
-                margin-left: 10px;
-                font-size: 16px ;
-
-                color: $grey;
-                font-family: $yantra;
-            }
-        }
-        &__Qualifications{
-            &__Study{
-                margin-left: 10px;
-                font-size: 16px ;
-                color: $grey;
-                font-family: $yantra;
-            }
-        }
-       &__Required{
-        &__Skills{
-            margin-left: 10px;
-                font-size: 16px ;
-                color: $grey;
-                font-family: $yantra;
-        }
-        &__RS{
-            margin-left: 10px;
-                font-size: 16px ;
-                color: $grey;
-                font-family: $yantra;
-        }
-       }
-       &__Salary{
-        &__Range{
-            margin-left: 10px;
-                font-size: 16px ;
-                color: $grey;
-                font-family: $yantra;
-        }
-        &__USD{
-            margin-left: 10px;
-            font-size: 16px ; 
-            color: $grey;
-            font-family: $yantra;
-        }
-       }
-        }
-    
-
-    
+  &__Heading {
+    display: flex;
+    margin-left: 26px;
+    color: $orange;
+    font-family: $yantra;
+    text-align: center;
+    &__h1 {
+      margin: 0px;
+    }
+    &__h4 {
+      display: flex;
+      margin-top: 10px;
+    }
+  }
+  &__Title {
+    &__Name {
+      font-size: 16px;
+      height: 16px;
+      margin: 0px 10px 10px 0px;
+      color: $grey;
+      font-family: $yantra;
+      text-transform: capitalize;
+    }
+    &__Info {
+      font-size: 16px;
+      margin: 0px 10px 10px 0px;
+      margin-left: 30px;
+      color: $grey;
+      font-family: $yantra;
+    }
+  }
+}

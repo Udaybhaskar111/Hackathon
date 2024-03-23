@@ -1,6 +1,5 @@
 /*@Author Sai */
 
-
 import React from 'react';
 import { data } from './Data';
 import './JobDescription.scss';
