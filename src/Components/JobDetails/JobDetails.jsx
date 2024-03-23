@@ -58,8 +58,7 @@ export const JobDetails = () => {
         <p className='JobDetails__Salary__USD'>USD 350-400k Per Annum</p>
       </div> */}
     </div>
-    
-  )
-}
+  );
+};
 
-export default JobDetails
+export default JobDetails;

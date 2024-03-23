@@ -34,23 +34,23 @@ export const AllCards = () => {
   };
   return (
     <>
-    <div className="dataProducts">
-      <div className="allCards">
-        {records.map((each, index) => (
-          <div onClick={() => handleDetail(each.id)}>
-            <CardComponent data={each} />
-          </div>
-        ))}
+      <div className="dataProducts">
+        <div className="allCards">
+          {records.map((each, index) => (
+            <div onClick={() => handleDetail(each.id)}>
+              <CardComponent data={each} />
+            </div>
+          ))}
+        </div>
       </div>
-      
-    </div>
-    <Stack spacing={2}>
-    <Pagination
-      count={4}
-      onChange={(e, p) => setCurrentPage(p)}
-      sx={{ color: 'rgba(224,219,213,255)',paddingLeft:'50%'}}
-    />
-  </Stack>
-  </>
+      <Stack spacing={2}>
+        <Pagination
+          count={4}
+          // color="primary"
+          onChange={(e, p) => setCurrentPage(p)}
+          sx={{ color: 'rgba(224,219,213,255)', paddingLeft: '50%' }}
+        />
+      </Stack>
+    </>
   );
 };

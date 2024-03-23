@@ -1,3 +1,42 @@
-.container {
-  display: flex;
+@import '../../Sass/Variable.scss';
+.heading{
+  font-size: 20px;
+  font-family: $lato;
+  color: $blue;
 }
+.form{
+    &__details{
+      display: flex;
+      flex-direction: column;
+      &-row{
+        display: flex;
+        gap: 20px;
+        &-inp{
+          // width: 200px;
+        }
+        
+      }
+    }
+}
+.button{
+  display: flex;
+  gap: 20px;
+  &__submit{
+    background-color: $blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+  }
+  &__cancel{
+    border: 2px solid $blue;
+    color: $blue;
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+
+  }
+}
+

@@ -1,3 +1,15 @@
-p {
+@import '../../../Sass/Variable.scss';
+.errorText {
   color: red;
+  margin: 5px 0px 0px 0px;
 }
+.input{
+  width: 400px;
+}
+.label{
+  font-size: 18px;
+  font-family: $lato;
+  font-weight: 400;
+  margin: 10px 0px 10px 0px;
+}
+

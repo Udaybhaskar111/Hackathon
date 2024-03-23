@@ -54,32 +54,38 @@ const TabSwitch = () => {
       </div>
 
       {/* right part filter,sort,grid-view,list-view */}
-<div className='Tabswitch__right'>
-    
-      <div className='TabSwitch__filter'>
-        <FilterTab value="Filters" source={Filter}/>
-        <FilterTab value="Sort" source={Sort}/>
-      </div>
-      
-      <div className='GridSwitch'>
+      <div className="Tabswitch__right">
+        <div className="TabSwitch__filter">
+          <FilterTab value="Filters" source={Filter} />
+          <FilterTab value="Sort" source={Sort} />
+        </div>
 
-      <div className="GridSwitch__div" onClick={() => ClickedToggle(0)}
-        style={{ backgroundImage: activeIndex === 0 ? `url(${bgcolor})` : 'none' }}>
-        <img src={vector} alt="icon" />
+        <div className="GridSwitch">
+          <div
+            className="GridSwitch__div"
+            onClick={() => ClickedToggle(0)}
+            style={{
+              backgroundImage: activeIndex === 0 ? `url(${bgcolor})` : 'none',
+            }}
+          >
+            <img src={vector} alt="icon" />
+          </div>
+          <div
+            className="GridSwitch__div"
+            onClick={() => ClickedToggle(1)}
+            style={{
+              backgroundImage: activeIndex === 1 ? `url(${bgcolor})` : 'none',
+            }}
+          >
+            <img src={vector2} alt="icon" />
+          </div>
+        </div>
       </div>
-      <div className="GridSwitch__div" onClick={() => ClickedToggle(1)}
-     style={{ backgroundImage: activeIndex === 1 ? `url(${bgcolor})` : 'none' }} >
-        <img src={vector2} alt="icon" />
+      <hr className="hr" />
+      <div className="LiveProducts">
+        <div className="LiveProduct__div">Live : 86 Products</div>
+        <div className="LiveProduct__div">Cache : 64 Products</div>
       </div>
-
-    </div>
-   
-   </div>
-<hr className='hr'/>
-<div className='LiveProducts'>
-<div className='LiveProduct__div'>Live : 86 Products</div>
-<div className='LiveProduct__div'>Cache : 64 Products</div>
-</div>
     </div>
   );
 };
