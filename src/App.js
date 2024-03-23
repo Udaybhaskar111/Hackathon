@@ -3,8 +3,10 @@ import './Sass/Variable.scss';
 import Home from './Pages/Home/Home';
 import FormPage  from './Pages/FormPage/FormPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import JobDetails from './Components/JobDetails/JobDetails';
 import { createContext, useState } from 'react';
 export const detailComp = createContext(null);
+
 function App() {
   const [detailCard, setDetailCard] = useState();
   return (
@@ -15,7 +17,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/form" element={<FormPage />} />
-              <Route path="/detailpage" element={<Home />} />
+              <Route path="/detailpage" element={<JobDetails/>} />
             </Routes>
           </React.StrictMode>
         </BrowserRouter>

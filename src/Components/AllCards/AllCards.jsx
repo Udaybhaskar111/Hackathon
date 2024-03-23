@@ -27,10 +27,9 @@ export const AllCards = () => {
   }, []);
   const handleDetail = (id) => {
     axiosInstance.post('/justice-leagues/detail', { id }).then((res) => {
-      console.log(res.data, 'as the data');
       dat.setDetailCard(res.data);
-      console.log(dat, 'as the data');
-      navigate('/detailCard');
+      console.log(res.data,"as the dataaaaa")
+      navigate('/detailpage');
     });
   };
   return (
@@ -50,7 +49,7 @@ export const AllCards = () => {
       count={4}
       // color="primary"
       onChange={(e, p) => setCurrentPage(p)}
-      sx={{ color: 'rgba(224,219,213,255)' }}
+      sx={{ color: 'rgba(224,219,213,255)',paddingLeft:'50%'}}
     />
   </Stack>
   </>
