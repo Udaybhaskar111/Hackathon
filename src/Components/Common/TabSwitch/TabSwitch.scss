@@ -14,7 +14,6 @@
     &__div {
       display: flex;
       gap: 5%;
-      width: 50%;
     }
     
     &__div2 {
@@ -49,8 +48,8 @@
     &__filter {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         gap: 5%; 
-        margin-top: -1%;
         padding-right: 2%;
         margin-right: 10%; 
       }
@@ -61,12 +60,14 @@
       }
       .GridSwitch {
         display: flex;
+        align-items: center;
+        gap: 10px;
     }
     
     .GridSwitch__div {
         position: relative; 
-        background: #FFFFFF;
-        border: 1px solid #3C3C3C;
+        // background: #FFFFFF;
+        color: black;
         gap: 0px;
         border-radius: 2px 0px 0px 0px;
         border: 1px 0px 0px 0px;

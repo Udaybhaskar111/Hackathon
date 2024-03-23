@@ -28,7 +28,7 @@ export const CardComponent = ({ data }) => {
         <div className="card__details-dataQuality">
           <span className="card__details-dataQuality-name">Data Quality</span>
           <span className="card__details-dataQuality-value">
-            {data.dataQualityd}
+            {data.dataQuality}
           </span>
         </div>
         <div className="card__details-domain">
@@ -64,8 +64,8 @@ export const CardComponent = ({ data }) => {
         </div>
       </div>
       <div className="card__buttons">
-        <button>Add to Cart</button>
-        <button>View Details</button>
+        <button className="card__buttons-cart">Add to Cart</button>
+        <button className="card__buttons-details">View Details</button>
       </div>
     </div>
   );
