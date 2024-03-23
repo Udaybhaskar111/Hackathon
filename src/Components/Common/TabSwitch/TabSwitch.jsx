@@ -53,6 +53,7 @@ const TabSwitch = () => {
         </div>
       </div>
 
+      {/* right part filter,sort,grid-view,list-view */}
 <div className='Tabswitch__right'>
     
       <div className='TabSwitch__filter'>
