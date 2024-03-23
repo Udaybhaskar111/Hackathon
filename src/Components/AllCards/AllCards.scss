@@ -1,17 +1,16 @@
 /*
 @ Author Lalitha*/
 @import '../../Sass/Main.scss';
-.allCards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-
+.allCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.dataProducts{
-    display: flex;
-    justify-content: center;
-    margin: 0px 28px 0px 75px;
-    @include layout(599){
-        margin: 0px 12px 0px 41px;
-    }
-} 
+.dataProducts {
+  // display: flex;
+  justify-content: center;
+  margin: 0px 28px 0px 75px;
+  @include layout(599) {
+    margin: 0px 12px 0px 41px;
+  }
+}

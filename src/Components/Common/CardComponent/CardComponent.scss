@@ -3,81 +3,77 @@
 */
 @import '../../../Sass//Variable.scss';
 @import '../../../Sass/Main.scss';
-.card{
-    padding: 20px 10px 10px 10px;
-    width: 337px;
-    border: 2px solid $borderColor;
-    border-radius: 4px;
-    @include layout(599){
+.card {
+  padding: 20px 10px 10px 10px;
+  width: 337px;
+  border: 2px solid $borderColor;
+  border-radius: 4px;
+  @include layout(599) {
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $lato;
+  }
+  &__subscribers {
+    &-item {
+      padding-right: 7px;
+      margin-right: 7px;
+      border-right: 1px solid black;
+      font-size: 14px;
+      font-family: $lato;
+    }
+  }
+  &__details {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    &-dataQuality {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-family: $lato;
+      font-weight: 400;
+      line-height: 14.4px;
 
-    }
-    &__header{
-        display: flex;
-        justify-content: space-between;
-        font-size: 18px;
-        line-height:22px;
-        font-family: $lato;
-
-    }
-    &__subscribers{
-        &-item{
-            padding-right: 7px;
-            margin-right: 7px;
-            border-right: 1px solid black;
-            font-size: 14px;
-            font-family: $lato;
-            
-        }
-    }
-    &__details{
-        padding-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        &-dataQuality{
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            font-family: $lato;
-            font-weight: 400;
-            line-height: 14.4px;
-            
-            &-name{
-                text-align: left;
-                color: rgba(107, 107, 107, 1);
-            }
-            &-value{
-                text-align: center;
-                margin-top: 20px;
-                font-family: $lato;
-            }
-           
-        }
-        &-domain{
-            display: flex;
-            flex-direction: column;
-            &-name{
-                text-align: left;
-                margin-bottom: 20px;
-                font-family: $lato;
-                color: rgba(107, 107, 107, 1);
-            }
-            &-icon{
-                display: flex;
-                gap: 10px;
-                font-family: $lato;
-            }
-            &-live{
-                font-size: 10px;
-                font-family: $lato;
-                margin-left: 28px;
-            }
-        }
-    }
-    &__buttons{
-        display: flex;
-        justify-content: space-between;
-        border-top: 1px solid $borderColor;
-        padding-top: 10px;
+      &-name {
+        text-align: left;
+        color: rgba(107, 107, 107, 1);
+      }
+      &-value {
+        text-align: center;
         margin-top: 20px;
+        font-family: $lato;
+      }
     }
+    &-domain {
+      display: flex;
+      flex-direction: column;
+      &-name {
+        text-align: left;
+        margin-bottom: 20px;
+        font-family: $lato;
+        color: rgba(107, 107, 107, 1);
+      }
+      &-icon {
+        display: flex;
+        gap: 10px;
+        font-family: $lato;
+      }
+      &-live {
+        font-size: 10px;
+        font-family: $lato;
+        margin-left: 28px;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $borderColor;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
 }

@@ -1,21 +1,27 @@
 import React from 'react';
 import './Sass/Variable.scss';
 import Home from './Pages/Home/Home';
-<<<<<<< Updated upstream
-import List from './Pages/ListPage/List'
-=======
-import TabSwitch from './Components/Common/TabSwitch/TabSwitch';
-
->>>>>>> Stashed changes
+import FormPage from './Pages/FormPage/FormPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { createContext, useState } from 'react';
+export const detailComp = createContext(null);
 function App() {
-    console.log(process.env.REACT_APP_API_URL)
-    return (
-        <>
-            {/* <Home/>
-             */}
-             <TabSwitch/>
-        </>
-    );
+  const [detailCard, setDetailCard] = useState();
+  return (
+    <>
+      <detailComp.Provider value={{ detailCard, setDetailCard }}>
+        <BrowserRouter>
+          <React.StrictMode>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/form" element={<FormPage />} />
+              <Route path="/detailpage" element={<Home />} />
+            </Routes>
+          </React.StrictMode>
+        </BrowserRouter>
+      </detailComp.Provider>
+    </>
+  );
 }
 
 export default App;

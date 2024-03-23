@@ -1,106 +1,103 @@
 @import '../../../Sass/Variable.scss';
 @import '../../../Sass/Main.scss';
 .header {
-    height:60px;
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    color: $blue;
-  }
-
-  
-  .header__logo {
-    width: 32.64px;
-    height: 23.14px;
-    gap: 0px;
-    opacity: 0px;
-    padding-left:8px;
-   
-  }
-  .header__left{
-    display: flex;
-    align-items: center;
-  }
-  .header__text {
-    gap: 0px;
-    opacity: 0px;
-    font-family: $lato;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 26.4px;
-    text-align: left;
-    padding-left: 15.36px;
-    padding-top:17px;
-    padding-bottom:17px;
-    @include layout(1023){
-      font-size: 18px;
-    }
-    @include layout(1023){
-      font-size: 16px;
-    }
-  }
-  
-  .header__right {
-    width: 71.25%;
-    height: 60px;
-    left: 368px;
-    gap: 0px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    opacity: 0px;
-    background-color: $blue;
-    border:50%;
-    border-top-left-radius: 72px;
-    border-bottom-right-radius:72px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: $blue;
 }
-  
-  .header__bar{
-    float:right;
+
+.header__logo {
+  width: 32.64px;
+  height: 23.14px;
+  gap: 0px;
+  opacity: 0px;
+  padding-left: 8px;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__text {
+  gap: 0px;
+  opacity: 0px;
+  font-family: $lato;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  padding-left: 15.36px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  @include layout(1023) {
+    font-size: 18px;
+  }
+  @include layout(1023) {
+    font-size: 16px;
+  }
+}
+
+.header__right {
+  width: 71.25%;
+  height: 60px;
+  left: 368px;
+  gap: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0px;
+  background-color: $blue;
+  border: 50%;
+  border-top-left-radius: 72px;
+  border-bottom-right-radius: 72px;
+}
+
+.header__bar {
+  float: right;
+}
+
+.icon__notification {
+  width: 24px;
+  height: 24px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.icon__question {
+  width: 24px;
+  height: 24px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 22.15px;
+}
+
+.icon__userroles {
+  width: 22px;
+  height: 22px;
+  gap: 0px;
+  opacity: 0px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 398px) {
+  .header__logo {
+    display: none;
   }
 
-  .icon__notification{
-    width: 24px;
-    height: 24px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .header__text {
+    width: auto;
+    font-size: 18px;
   }
 
-  .icon__question{
-    width: 24px;
-    height: 24px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-left: 22.15px;
-    
+  .icon__notification,
+  .icon__question,
+  .icon__userroles {
+    padding: 0 4px;
   }
-
-  .icon__userroles{
-    width: 22px;
-    height: 22px;
-    gap: 0px;
-    opacity: 0px;    
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-right: 40px;
-  }
-  @media screen and (max-width: 398px) {
-    .header__logo {
-        display: none;
-    }
-
-    .header__text {
-        width: auto;
-        font-size: 18px;
-    }
-
-    .icon__notification,
-    .icon__question,
-    .icon__userroles {
-        padding: 0 4px;
-    }
 }
