@@ -59,9 +59,7 @@ const TabSwitch = () => {
         <div className="TabSwitch__filter">
           <FilterTab value="Filters" source={Filter} />
           <FilterTab value="Sort" source={Sort} />
-        </div>
-
-        <div className="GridSwitch">
+          <div className="GridSwitch">
           <div
             className="GridSwitch__div"
             onClick={() => ClickedToggle(0)}
@@ -81,6 +79,9 @@ const TabSwitch = () => {
             <img src={vector2} alt="icon" />
           </div>
         </div>
+        </div>
+
+       
       </div>
       <hr className="hr" />
       <div className="LiveProducts">
