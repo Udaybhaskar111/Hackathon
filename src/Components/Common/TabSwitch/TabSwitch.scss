@@ -6,7 +6,7 @@
     top: 19.31px;
     gap: 0px;
     opacity: 0px;
-  
+    padding-left: 75px;
     &:hover {
       cursor: pointer;
     }
@@ -61,7 +61,6 @@
       }
       .GridSwitch {
         display: flex;
-
     }
     
     .GridSwitch__div {
@@ -77,26 +76,46 @@
         background-position-x:center;
     }
     
-    
+  .container{
+    display: flex;
+    justify-content: space-between;
   }
-  
+  .formbutton{
+    position: relative;
+    right:15%;
+    button{
+      background-color: #336fe3;;
+      color: white;
+    }
+  }
+  }
+  .LiveProducts{
+    display: flex;
+    padding-bottom: 10px;
+  }
+    .LiveProduct__div{
+    margin: 10px;
+  }
+   
+  .vl {
+    border-left: 2px solid gray;
+    margin-top: 2px;
+    height: 30px;
+  }
+
   .TabSwitch__right {
     display: flex;
-    align-items: center; 
+
   }
   
-  .GridSwitch {
-    display: flex;
-    gap: 10px; 
-  }
   .hr{
     border: 1px solid #C8C8C8;
-height: 0px;
-top: 31px;
-left: 1px;
-gap: 0px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
+    height: 0px;
+    top: 31px;
+    left: 1px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
 
   }
   .LiveProducts{

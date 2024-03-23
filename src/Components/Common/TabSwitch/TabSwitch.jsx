@@ -7,9 +7,11 @@ import Sort from '../../../assests/Sort.svg';
 import '../../Common/FilterTab/FilterTab.scss';
 import vector from '../../../assests/Vector2.svg';
 import vector2 from '../../../assests/2nd_vector.svg';
-import bgcolor from '../../../assests/OrangebgColor.svg';
-import { AllCards } from '../../AllCards/AllCards';
 import List from '../../../Pages/ListPage/List';
+import AllCards  from '../../../Components/AllCards/AllCards';
+import bgcolor from '../../../assests/OrangebgColor.svg';
+import { useNavigate } from 'react-router';
+import { Button } from '@mui/material';
 /**
  * @description: It switches between the tab and has filter,sort buttons
  * and has a toggle for switching b/w grid-view and list-view
@@ -28,7 +30,6 @@ const TabSwitch = () => {
   const ClickedToggle = (index) => {
     setIndexActive(activeIndex === index ? null : index);
   };
-
   return (
     <div className="TabSwitch">
       <div className="TabSwitch__div">
@@ -56,32 +57,46 @@ const TabSwitch = () => {
         </div>
       </div>
 
-<div className='Tabswitch__right'>
-    
-      <div className='TabSwitch__filter'>
-        <FilterTab value="Filters" source={Filter}/>
-        <FilterTab value="Sort" source={Sort}/>
-      </div>
-      
-      <div className='GridSwitch'>
+      {/* right part filter,sort,grid-view,list-view */}
+      <div className="Tabswitch__right">
+        <div className="TabSwitch__filter">
+          <FilterTab value="Filters" source={Filter} />
+          <FilterTab value="Sort" source={Sort} />
+        </div>
 
-      <div className="GridSwitch__div" onClick={() => ClickedToggle(0)}
-        style={{ backgroundImage: activeIndex === 0 ? `url(${bgcolor})` : 'none' }}>
-        <img src={vector} alt="icon" />
+        <div className="GridSwitch">
+          <div
+            className="GridSwitch__div"
+            onClick={() => ClickedToggle(0)}
+            style={{
+              backgroundImage: activeIndex === 0 ? `url(${bgcolor})` : 'none',
+            }}
+          >
+            <img src={vector} alt="icon" />
+          </div>
+          <div
+            className="GridSwitch__div"
+            onClick={() => ClickedToggle(1)}
+            style={{
+              backgroundImage: activeIndex === 1 ? `url(${bgcolor})` : 'none',
+            }}
+          >
+            <img src={vector2} alt="icon" />
+          </div>
+        </div>
       </div>
-      <div className="GridSwitch__div" onClick={() => ClickedToggle(1)}
-     style={{ backgroundImage: activeIndex === 1 ? `url(${bgcolor})` : 'none' }} >
-        <img src={vector2} alt="icon" />
+      <hr className="hr" />
+      <div className='container'>
+      <div className="LiveProducts">
+        <div className="LiveProduct__div">Live : 86 Products</div>
+        <div className='vl'></div>
+        <div className="LiveProduct__div">Cache : 64 Products</div>
       </div>
-
-    </div>
-   
-   </div>
-<hr className='hr'/>
-<div className='LiveProducts'>
-<div className='LiveProduct__div'>Live : 86 Products</div>
-<div className='LiveProduct__div'>Cache : 64 Products</div>
-</div>
+      <div className='formbutton'>
+        <Button onClick={()=>navigate('/form')}>ADD PRODUCT</Button>
+      </div>
+      </div>
+{activeIndex === 0 ? <AllCards />:<List /> }
     </div>
   );
 };
