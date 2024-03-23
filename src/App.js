@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sass/Variable.scss';
 import Home from './Pages/Home/Home';
-import FormPage from './Pages/FormPage/FormPage';
+import FormPage  from './Pages/FormPage/FormPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createContext, useState } from 'react';
 export const detailComp = createContext(null);
