@@ -1,108 +1,118 @@
 @import '../../Sass/Variable.scss';
 
-.JobDetails {
-  border: 1px solid;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  // width: 1306px;
+.JobDetails{
+   
+    border: 1px solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    
+    &__Heading{
+        display: flex;
+        margin-left: 26px;
+        color: $orange;
+       font: $yantra;
 
-  &__Heading {
-    display: flex;
-    margin-left: 26px;
-    color: $orange;
-    font: $yantra;
 
-    &__h4 {
-      margin-top: 33px;
-    }
-  }
-  &__Title {
-    &__Name {
-      font-size: 16px;
-      height: 16px;
-      margin-left: 10px;
-      color: $grey;
-      font: $yantra;
-    }
-    &__Info {
-      font-size: 16px;
-      margin-left: 10px;
-      color: $grey;
-      font: $yantra;
-    }
-  }
-  &__Experience {
-    &__Title {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-    &__years {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-  }
-  &__Location {
-    &__Place {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-    &__City {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-  }
-  &__Job {
-    &__Summary {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-  }
-  &__Qualifications {
-    &__Study {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-  }
-  &__Required {
-    &__Skills {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-    &__RS {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-  }
-  &__Salary {
-    &__Range {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-    &__USD {
-      margin-left: 10px;
-      font-size: 16px;
-      color: $grey;
-      font: $yantra;
-    }
-  }
-}
+        &__h4{
+            margin-top: 33px;
+            
+        }
+        
+        }
+        &__Title{
+            &__Name{
+                font-size: 16px;
+                height: 16px;
+                margin-left: 10px;
+                color: $grey;
+                font: $yantra;
+
+                
+            }
+            &__Info{
+                font-size: 16px ;
+                margin-left: 10px;
+                color: $grey;
+                font: $yantra;
+            }
+            
+        }
+        &__Experience{
+            &__Title{
+                margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+            }
+            &__years{
+                margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+            }
+        }
+        &__Location{
+            &__Place{
+                margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+            }
+            &__City{
+                margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+            }
+        }
+        &__Job{
+            &__Summary{
+                margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+            }
+        }
+        &__Qualifications{
+            &__Study{
+                margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+            }
+        }
+       &__Required{
+        &__Skills{
+            margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+        }
+        &__RS{
+            margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+        }
+       }
+       &__Salary{
+        &__Range{
+            margin-left: 10px;
+                font-size: 16px ;
+                color: $grey;
+                font: $yantra;
+        }
+        &__USD{
+            margin-left: 10px;
+            font-size: 16px ; 
+            color: $grey;
+            font: $yantra;
+        }
+       }
+        }
+    
+
+    

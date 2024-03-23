@@ -29,7 +29,7 @@ const columns = [
     sortable: false,
     width: 100,
     renderCell: (params) => <CartCell />,
-  }, // Add a column for the bookmark icon
+  }, 
 ];
 
 const BookmarkCell = () => (
@@ -76,7 +76,6 @@ const List = () => {
         pageSize={5}
         disableSelectionOnClick
         components={{
-          // eslint-disable-next-line react/prop-types
           Cell: ({ field }) => {
             if (field === 'bookmark') return <BookmarkCell />;
             if (field === 'cart') return <CartCell />;

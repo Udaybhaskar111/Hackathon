@@ -27,10 +27,9 @@ export const AllCards = () => {
   }, []);
   const handleDetail = (id) => {
     axiosInstance.post('/justice-leagues/detail', { id }).then((res) => {
-      console.log(res.data, 'as the data');
       dat.setDetailCard(res.data);
-      console.log(dat, 'as the data');
-      navigate('/detailCard');
+      console.log(res.data,"as the dataaaaa")
+      navigate('/detailpage');
     });
   };
   return (

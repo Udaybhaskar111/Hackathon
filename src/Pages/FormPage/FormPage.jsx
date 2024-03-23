@@ -1,5 +1,5 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+import {useForm} from "react-hook-form";
 import { Input } from '../../Components/Common/InputField/InputField';
 import { Button } from '../../Components/Common/Button/Button';
 import { Select } from '../../Components/Common/SelectField/SelectField';
