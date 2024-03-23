@@ -5,7 +5,6 @@
 
 */
 
-
 import React from 'react';
 import { CardComponent } from '../Common/CardComponent/CardComponent';
 import './AllCards.scss';
@@ -53,7 +52,7 @@ const AllCards = () => {
      */
     axiosInstance.post('/justice-leagues/detail', { id }).then((res) => {
       dat.setDetailCard(res.data);
-      console.log(res.data,"as the dataaaaa")
+      console.log(res.data, 'as the dataaaaa');
       navigate('/detailpage');
     });
   };

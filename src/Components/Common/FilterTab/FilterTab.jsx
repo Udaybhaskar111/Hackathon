@@ -1,7 +1,7 @@
 import React from 'react';
 /**
- * 
- * @param {*} props which passes params as Image source and value 
+ *
+ * @param {*} props which passes params as Image source and value
  * @author:Charan
  */
 const FilterTab = (props) => {

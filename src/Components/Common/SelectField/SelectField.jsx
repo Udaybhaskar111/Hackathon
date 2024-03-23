@@ -9,11 +9,16 @@ export const Select = (props) => {
     <div>
       <p className={styles.field}>{fieldname}</p>
       <select {...register} className={styles.select}>
-        <option value="select the below" selected={true}  disabled className='option'>
+        <option
+          value="select the below"
+          selected={true}
+          disabled
+          className="option"
+        >
           Select the below
         </option>
         {options.map((item, index) => (
-          <option key={index} value={item.value} className='option'>
+          <option key={index} value={item.value} className="option">
             {item.name}
           </option>
         ))}
