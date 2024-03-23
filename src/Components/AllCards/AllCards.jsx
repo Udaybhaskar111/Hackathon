@@ -48,7 +48,6 @@ export const AllCards = () => {
     <Stack spacing={2}>
     <Pagination
       count={4}
-      // color="primary"
       onChange={(e, p) => setCurrentPage(p)}
       sx={{ color: 'rgba(224,219,213,255)' }}
     />

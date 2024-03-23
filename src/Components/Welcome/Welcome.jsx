@@ -2,8 +2,8 @@ import React from 'react';
 import '../Welcome/Welcome.scss';
 import circle from '../../assests/fonts/play-circle.svg';
 /**
- * Desc: Welcome component with a welcome text and watch Markeptplace Demo button
- * Author:charan
+ * @description: Welcome component with a welcome text and watch Markeptplace Demo button
+ * @author:charan
  */
 const Welcome = () => {
   return (
