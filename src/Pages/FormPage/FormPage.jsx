@@ -94,18 +94,15 @@ export default function FormPage() {
               </div>
             </div>
           </div>
-
-          <div className="buttons">
-            <button type="submit" className="button__submit">
-              Submit
-            </button>
-            <button type="text" handle={handleFun} className="button__cancel">
-              Cancel
-            </button>
+         
+            <div className='buttons'>
+                <button type="submit" className="button__submit">Submit</button>
+                <button type="text" onClick={handleFun} className="button__cancel">Cancel</button>
+            </div>
+            </form>
+            <div>
+            </div>
           </div>
-        </form>
-        <div></div>
-      </div>
     </>
   );
 }
