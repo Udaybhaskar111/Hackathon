@@ -7,6 +7,10 @@ import Sort from '../../../assests/Sort.svg';
 import '../../Common/FilterTab/FilterTab.scss';
 import vector from '../../../assests/Vector2.svg';
 import vector2 from '../../../assests/2nd_vector.svg';
+import List from '../../../Pages/ListPage/List';
+import AllCards  from '../../../Components/AllCards/AllCards';
+import List from '../../../Pages/ListPage/List';
+import AllCards  from '../../../Components/AllCards/AllCards';
 import bgcolor from '../../../assests/OrangebgColor.svg';
 /**
  * @description: It switches between the tab and has filter,sort buttons
@@ -15,17 +19,21 @@ import bgcolor from '../../../assests/OrangebgColor.svg';
  */
 
 const TabSwitch = () => {
-  const [activeTab, setTabActive] = useState(0);
+  const [activeTab, setTabActive] = useState(false);
+  const [activeTab, setTabActive] = useState(false);
 
-  const ClickedTab = (index) => {
-    setTabActive(activeTab === index ? null : index);
+  const ClickedTab = (flag) => {
+    setTabActive((prev)=>!prev);
+  const ClickedTab = (flag) => {
+    setTabActive((prev)=>!prev);
   };
   const [activeIndex, setIndexActive] = useState(0);
 
   const ClickedToggle = (index) => {
     setIndexActive(activeIndex === index ? null : index);
   };
-
+ console.log(activeIndex,"huiuhukjhk");
+ console.log(activeIndex,"huiuhukjhk");
   return (
     <div className="TabSwitch">
       <div className="TabSwitch__div">
@@ -84,8 +92,10 @@ const TabSwitch = () => {
       <hr className="hr" />
       <div className="LiveProducts">
         <div className="LiveProduct__div">Live : 86 Products</div>
-        <div className="LiveProduct__div">Cache : 64 Products</div>
+        <div className='vl'></div>
+<div className="LiveProduct__div">Cache : 64 Products</div>
       </div>
+{activeIndex === 0 ? <AllCards />:<List /> }
     </div>
   );
 };

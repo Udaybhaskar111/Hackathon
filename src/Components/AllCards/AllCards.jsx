@@ -11,7 +11,8 @@ import Stack from '@mui/material/Stack';
 import { detailComp } from '../../App';
 import { axiosInstance } from '../../Services/Axios';
 import { useContext } from 'react';
-export const AllCards = () => {
+import List from '../../Pages/ListPage/List';
+const AllCards = () => {
   const [cards, setCards] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const dataPerPage = 6;
@@ -48,9 +49,10 @@ export const AllCards = () => {
           count={4}
           // color="primary"
           onChange={(e, p) => setCurrentPage(p)}
-          sx={{ color: 'rgba(224,219,213,255)', paddingLeft: '50%' }}
+          sx={{ color: 'rgba(224,219,213,255)', paddingLeft: '50%' ,marginTop:'10px',marginTop:'10px'}}
         />
       </Stack>
     </>
   );
 };
+export default AllCards;

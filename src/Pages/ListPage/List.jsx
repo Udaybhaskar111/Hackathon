@@ -73,8 +73,9 @@ const List = () => {
       <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={5}
         disableSelectionOnClick
+        pagination={false}
+        pagination={false}
         components={{
           Cell: ({ field }) => {
             if (field === 'bookmark') return <BookmarkCell />;
