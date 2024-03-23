@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './JobDetails.scss'
 import { detailComp } from '../../App';
+import Header from '../Common/Header/Header';
 import { constants } from '../../Constants/Constant';
 export const JobDetails = () => {
   const dat = useContext(detailComp);
@@ -15,6 +16,8 @@ export const JobDetails = () => {
   },[])
 
   return (
+    <div>
+    <Header />
     <div className='JobDetails'>
         {/* <div className='JobDetails__Heading'>
       <h1 className='JobDetails__Heading__h1'>EXL |</h1>
@@ -57,6 +60,7 @@ export const JobDetails = () => {
         <h5 className='JobDetails__Salary__Range'>Salary Range</h5>
         <p className='JobDetails__Salary__USD'>USD 350-400k Per Annum</p>
       </div> */}
+    </div>
     </div>
   );
 };

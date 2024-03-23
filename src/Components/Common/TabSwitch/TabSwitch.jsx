@@ -15,7 +15,7 @@ import { Button } from '@mui/material';
 /**
  * @description: It switches between the tab and has filter,sort buttons
  * and has a toggle for switching b/w grid-view and list-view
- * @author :Charan
+ * @author :Charan 
  */
 
 const TabSwitch = () => {
