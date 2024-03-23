@@ -6,7 +6,8 @@ export const Input = (props) => {
   const { register, label, errors } = props;
   return (
     <div>
-      <TextField label={label} {...register} />
+      <p className={styles.label}>{label}</p>
+      <TextField label={label} {...register} className={styles.input}/>
       <p className={styles.errorText}>{errors}</p>
     </div>
   );

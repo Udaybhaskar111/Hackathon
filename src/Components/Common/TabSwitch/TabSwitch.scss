@@ -1,111 +1,103 @@
 @import '../../../Sass/Variable.scss';
 
 .TabSwitch {
-    top: 19.31px;
-    gap: 0px;
-    opacity: 0px;
-  
-    &:hover {
-      cursor: pointer;
-    }
-  
-    &__div {
-      display: flex;
-      gap: 5%;
-      width: 50%;
-    }
-    
-    &__div2 {
-      font-family: $lato;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 16.8px;
-      text-align: left;
-      position: relative;
-      cursor: pointer;
-      display: flex;
-      gap: 0.5%;
-  
-      &-active {
-        color: #3c3c3c;
-        font-weight: 600;
-      }
-      &-nonactive {
-        color: #3c3c3c;
-        font-weight: 400;
-      }
-  
-      .underline {
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background-color: #ff9600;
-      }
-    }
-    &__filter {
-        display: flex;
-        justify-content: flex-end;
-        gap: 5%; 
-        margin-top: -1%;
-        padding-right: 2%;
-        margin-right: 10%; 
-      }
-      &__right {
-        display: flex;
+  top: 19.31px;
+  gap: 0px;
+  opacity: 0px;
 
-    
-      }
-      .GridSwitch {
-        display: flex;
-        // flex-direction: row;
-    }
-    
-    .GridSwitch__div {
-        position: relative; 
-        background: #FFFFFF;
-        border: 1px solid #3C3C3C;
-        gap: 0px;
-        border-radius: 2px 0px 0px 0px;
-        border: 1px 0px 0px 0px;
-        opacity: 0px;
-        rotate: -180deg;
-        background-size:cover; 
-        background-position-x:center;
-    }
-    
-    
+  &:hover {
+    cursor: pointer;
   }
-  
-  .TabSwitch__right {
+
+  &__div {
     display: flex;
-    align-items: center; 
+    gap: 5%;
+    width: 50%;
   }
-  
+
+  &__div2 {
+    font-family: $lato;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5%;
+
+    &-active {
+      color: #3c3c3c;
+      font-weight: 600;
+    }
+    &-nonactive {
+      color: #3c3c3c;
+      font-weight: 400;
+    }
+
+    .underline {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #ff9600;
+    }
+  }
+  &__filter {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    margin-top: -1%;
+    padding-right: 2%;
+    margin-right: 10%;
+  }
+  &__right {
+    display: flex;
+  }
   .GridSwitch {
     display: flex;
-    gap: 10px; 
+    // flex-direction: row;
   }
-  .hr{
-    border: 1px solid #C8C8C8;
-height: 0px;
-top: 31px;
-left: 1px;
-gap: 0px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
 
+  .GridSwitch__div {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #3c3c3c;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    rotate: -180deg;
+    background-size: cover;
+    background-position-x: center;
   }
-  .LiveProducts{
+}
 
-    &__div{
-        font-family: $lato;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16px;
-        text-align: left;
-        
-    }
+.TabSwitch__right {
+  display: flex;
+  align-items: center;
+}
+
+.GridSwitch {
+  display: flex;
+  gap: 10px;
+}
+.hr {
+  border: 1px solid #c8c8c8;
+  height: 0px;
+  top: 31px;
+  left: 1px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+.LiveProducts {
+  &__div {
+    font-family: $lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
   }
-  
+}

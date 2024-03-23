@@ -7,12 +7,13 @@ export const Select = (props) => {
   console.log(options, 'as the opyion');
   return (
     <div>
-      <select {...register}>
-        <option value="select the below" disabled>
+      <p className={styles.field}>{fieldname}</p>
+      <select {...register} className={styles.select}>
+        <option value="select the below" selected={true}  disabled className='option'>
           Select the below
         </option>
         {options.map((item, index) => (
-          <option key={index} value={item.value}>
+          <option key={index} value={item.value} className='option'>
             {item.name}
           </option>
         ))}
