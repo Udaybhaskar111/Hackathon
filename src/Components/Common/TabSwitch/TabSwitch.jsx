@@ -20,10 +20,10 @@ import { Button } from '@mui/material';
 
 const TabSwitch = () => {
   const navigate=useNavigate()
-  const [activeTab, setTabActive] = useState(false);
+  const [activeTab, setTabActive] = useState(0);
 
-  const ClickedTab = (flag) => {
-    setTabActive((prev)=>!prev);
+  const ClickedTab = (index) => {
+    setTabActive(activeTab=== index ? null : index);
   };
   const [activeIndex, setIndexActive] = useState(0);
 
