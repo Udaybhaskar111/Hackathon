@@ -17,10 +17,11 @@ import List from '../../../Pages/ListPage/List';
  */
 
 const TabSwitch = () => {
+  const navigate=useNavigate()
   const [activeTab, setTabActive] = useState(0);
 
   const ClickedTab = (index) => {
-    setTabActive(activeTab === index ? null : index);
+    setTabActive(activeTab=== index ? null : index);
   };
   const [activeIndex, setIndexActive] = useState(0);
 
