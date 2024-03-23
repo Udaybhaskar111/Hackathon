@@ -76,7 +76,18 @@
         background-position-x:center;
     }
     
-    
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .formbutton{
+    position: relative;
+    right:15%;
+    button{
+      background-color: #336fe3;;
+      color: white;
+    }
+  }
   }
   .LiveProducts{
     display: flex;

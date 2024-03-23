@@ -10,6 +10,8 @@ import vector2 from '../../../assests/2nd_vector.svg';
 import List from '../../../Pages/ListPage/List';
 import AllCards  from '../../../Components/AllCards/AllCards';
 import bgcolor from '../../../assests/OrangebgColor.svg';
+import { useNavigate } from 'react-router';
+import { Button } from '@mui/material';
 /**
  * @description: It switches between the tab and has filter,sort buttons
  * and has a toggle for switching b/w grid-view and list-view
@@ -17,6 +19,7 @@ import bgcolor from '../../../assests/OrangebgColor.svg';
  */
 
 const TabSwitch = () => {
+  const navigate=useNavigate()
   const [activeTab, setTabActive] = useState(false);
 
   const ClickedTab = (flag) => {
@@ -83,10 +86,15 @@ const TabSwitch = () => {
         </div>
       </div>
       <hr className="hr" />
+      <div className='container'>
       <div className="LiveProducts">
         <div className="LiveProduct__div">Live : 86 Products</div>
         <div className='vl'></div>
-<div className="LiveProduct__div">Cache : 64 Products</div>
+        <div className="LiveProduct__div">Cache : 64 Products</div>
+      </div>
+      <div className='formbutton'>
+        <Button onClick={()=>navigate('/form')}>ADD PRODUCT</Button>
+      </div>
       </div>
 {activeIndex === 0 ? <AllCards />:<List /> }
     </div>
