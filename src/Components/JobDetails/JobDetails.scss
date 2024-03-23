@@ -1,3 +1,6 @@
+
+/*Author Sai*/
+
 @import '../../Sass/Variable.scss';
 
 .JobDetails{
@@ -13,8 +16,8 @@
         display: flex;
         margin-left: 26px;
         color: $orange;
-       font: $yantra;
-
+       font-family: $yantra;
+    
 
         &__h4{
             margin-top: 33px;
@@ -28,7 +31,7 @@
                 height: 16px;
                 margin-left: 10px;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
 
                 
             }
@@ -36,7 +39,7 @@
                 font-size: 16px ;
                 margin-left: 10px;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
             }
             
         }
@@ -45,13 +48,13 @@
                 margin-left: 10px;
                 font-size: 16px ;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
             }
             &__years{
                 margin-left: 10px;
                 font-size: 16px ;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
             }
         }
         &__Location{
@@ -59,21 +62,22 @@
                 margin-left: 10px;
                 font-size: 16px ;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
             }
             &__City{
                 margin-left: 10px;
                 font-size: 16px ;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
             }
         }
         &__Job{
             &__Summary{
                 margin-left: 10px;
                 font-size: 16px ;
+
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
             }
         }
         &__Qualifications{
@@ -81,7 +85,7 @@
                 margin-left: 10px;
                 font-size: 16px ;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
             }
         }
        &__Required{
@@ -89,13 +93,13 @@
             margin-left: 10px;
                 font-size: 16px ;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
         }
         &__RS{
             margin-left: 10px;
                 font-size: 16px ;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
         }
        }
        &__Salary{
@@ -103,13 +107,13 @@
             margin-left: 10px;
                 font-size: 16px ;
                 color: $grey;
-                font: $yantra;
+                font-family: $yantra;
         }
         &__USD{
             margin-left: 10px;
             font-size: 16px ; 
             color: $grey;
-            font: $yantra;
+            font-family: $yantra;
         }
        }
         }
