@@ -75,7 +75,6 @@ const List = () => {
         columns={columns}
         disableSelectionOnClick
         pagination={false}
-        pagination={false}
         components={{
           Cell: ({ field }) => {
             if (field === 'bookmark') return <BookmarkCell />;
