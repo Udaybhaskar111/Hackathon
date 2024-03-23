@@ -17,15 +17,7 @@ export const JobDetails = () => {
   useEffect(()=>{
       setDetail(dat.detailCard.data);
   },[])
-  const [detail, setDetail] = useState({});
-  useEffect(() => {
-    // let a;
-    //   console.log(dat.detailCard,"jhjb")
-    setDetail(dat.detailCard.data);
-    // console.log(dat.detailCard.data)
-    // a=dat.detailCard.data;
-    // console.log(a,"hy")
-  }, []);
+  
 
   return (
     <div>
