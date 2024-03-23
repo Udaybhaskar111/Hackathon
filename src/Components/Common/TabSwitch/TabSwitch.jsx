@@ -10,8 +10,6 @@ import vector2 from '../../../assests/2nd_vector.svg';
 import List from '../../../Pages/ListPage/List';
 import AllCards  from '../../../Components/AllCards/AllCards';
 import bgcolor from '../../../assests/OrangebgColor.svg';
-import { AllCards } from '../../AllCards/AllCards';
-import List from '../../../Pages/ListPage/List';
 /**
  * @description: It switches between the tab and has filter,sort buttons
  * and has a toggle for switching b/w grid-view and list-view
