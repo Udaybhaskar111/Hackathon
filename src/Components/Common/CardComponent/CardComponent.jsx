@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /*
-    @Author : Lalitha
+    @Author : Durga Lalitha
 */
 
 import React from 'react';

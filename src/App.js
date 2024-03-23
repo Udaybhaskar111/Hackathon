@@ -1,3 +1,5 @@
+/*Author uday*/
+
 import React from 'react';
 import './Sass/Variable.scss';
 import Home from './Pages/Home/Home';

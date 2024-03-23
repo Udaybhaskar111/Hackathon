@@ -1,3 +1,5 @@
+/*Author Sai*/
+
 import React, { useContext, useEffect, useState } from 'react'
 import './JobDetails.scss'
 import { detailComp } from '../../App';

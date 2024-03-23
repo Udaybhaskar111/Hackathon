@@ -1,4 +1,11 @@
 /* eslint-disable react/jsx-key */
+
+/*
+@Author Durga Lalitha
+
+*/
+
+
 import React from 'react';
 import { CardComponent } from '../Common/CardComponent/CardComponent';
 import './AllCards.scss';
@@ -26,6 +33,8 @@ const AllCards = () => {
       setCards(res.data.data);
     });
   }, []);
+
+  //post request to the get the details by id
   const handleDetail = (id) => {
     axiosInstance.post('/justice-leagues/detail', { id }).then((res) => {
       dat.setDetailCard(res.data);
