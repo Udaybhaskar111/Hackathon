@@ -1,14 +1,15 @@
 @import '../../../Sass/Variable.scss';
-
+/**
+@author:Charan
+**/
 .welcome {
-  //   width: 759px;
   height: 55px;
   top: 90px;
   margin-left: 71px;
   gap: 0px;
   opacity: 0px;
   display: flex;
-  // gap: 10%;
+ 
 
   &__text {
     width: 759px;

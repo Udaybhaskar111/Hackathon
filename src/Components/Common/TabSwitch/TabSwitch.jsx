@@ -9,8 +9,9 @@ import vector from '../../../assests/Vector2.svg';
 import vector2 from '../../../assests/2nd_vector.svg';
 import bgcolor from '../../../assests/OrangebgColor.svg';
 /**
- * Desc: It switches between the tab
- * Author :Charan
+ * @description: It switches between the tab and has filter,sort buttons
+ * and has a toggle for switching b/w grid-view and list-view
+ * @author :Charan
  */
 
 const TabSwitch = () => {
@@ -28,7 +29,7 @@ const TabSwitch = () => {
   return (
     <div className="TabSwitch">
       <div className="TabSwitch__div">
-        {/* left part ,tab swirtches */}
+    
         <div
           className={`TabSwitch__div2 ${activeTab === 0 ? 'TabSwitch__div2-active' : 'TabSwitch__div2-nonactive'}`}
           onClick={() => ClickedTab(0)}
@@ -52,7 +53,6 @@ const TabSwitch = () => {
         </div>
       </div>
 
-      {/* right part filter,sort,grid-view,list-view */}
 <div className='Tabswitch__right'>
     
       <div className='TabSwitch__filter'>
